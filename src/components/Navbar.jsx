@@ -42,7 +42,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={harshan} alt='Harshan' className='w-9 h-9 rounded-full object-cover border-2 border-white shadow-lg' />
+          <img src={harshan} alt='Harshan' className='w-12 h-12 rounded-full object-cover border-3 border-white shadow-xl hover:scale-110 transition-transform duration-300' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Harshan Portfolio
           </p>
