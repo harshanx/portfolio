@@ -44,8 +44,7 @@ const Navbar = () => {
         >
           <img src={harshan} alt='Harshan' className='w-9 h-9 rounded-full object-cover border-2 border-white shadow-lg' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Harshan &nbsp;
-            <span className='sm:block hidden'> | BTech CSE</span>
+            Harshan Portfolio
           </p>
         </Link>
 
