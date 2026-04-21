@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { projects, featuredProject } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+
 
 const ProjectCard = ({
   index,
@@ -88,10 +89,21 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+      <div className='mt-20 flex flex-col gap-12'>
+        {/* Projects */}
+        <div className='flex flex-wrap gap-7 justify-center'>
+          {projects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          ))}
+        </div>
+        
+        {/* Featured Project */}
+        <div>
+          <h3 className='text-white font-bold text-[24px] mb-6 text-center'>Featured Project</h3>
+          <div className='flex justify-center'>
+            <ProjectCard index={0} {...featuredProject} />
+          </div>
+        </div>
       </div>
     </>
   );

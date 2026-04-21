@@ -1,4 +1,6 @@
 import logo from "./logo.svg";
+import harshanLogo from "./harshan-logo.svg";
+import harshan from "./harshan.png.jpeg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -29,9 +31,17 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import mulearn from "./company/mulearn.png"
+import iste from "./company/iste.png"
+
+import collbus from "./collbus.png"
+import foodhub from "./foodhub.png"
+import autopilot from "./autopilot.png"
 
 export {
   logo,
+  harshanLogo,
+  harshan,
   backend,
   creator,
   mobile,
@@ -59,4 +69,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  mulearn,
+  iste,
+  collbus,
+  foodhub,
+  autopilot,
 };
