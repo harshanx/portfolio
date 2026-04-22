@@ -1,7 +1,5 @@
 import React from "react";
 
-import Tilt from "react-tilt";
-
 import { motion } from "framer-motion";
 
 
@@ -16,59 +14,41 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 
 
-const ServiceCard = ({ index, title, icon }) => (
+const ServiceCard = ({ index, title, icon }) => {
+  const [isHovered, setIsHovered] = React.useState(false);
 
-  <Tilt className='xs:w-[250px] w-full'>
-
+  return (
     <motion.div
-
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-
+      className='xs:w-[250px] w-full'
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 300 }}
     >
-
-      <div
-
-        options={{
-
-          max: 45,
-
-          scale: 1,
-
-          speed: 450,
-
-        }}
-
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-
+      <div 
+        className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
+        <div
+          className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col transition-transform duration-300'
+          style={{
+            transform: isHovered ? 'perspective(1000px) rotateX(10deg) rotateY(-10deg)' : 'perspective(1000px) rotateX(0deg) rotateY(0deg)'
+          }}
+        >
+          <img
+            src={icon}
+            alt='web-development'
+            className='w-16 h-16 object-contain'
+          />
 
-        <img
-
-          src={icon}
-
-          alt='web-development'
-
-          className='w-16 h-16 object-contain'
-
-        />
-
-
-
-        <h3 className='text-white text-[20px] font-bold text-center'>
-
-          {title}
-
-        </h3>
-
+          <h3 className='text-white text-[20px] font-bold text-center'>
+            {title}
+          </h3>
+        </div>
       </div>
-
     </motion.div>
-
-  </Tilt>
-
-);
+  );
+};
 
 
 

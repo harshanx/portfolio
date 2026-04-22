@@ -1,5 +1,4 @@
 import React from "react";
-import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -17,15 +16,21 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
+  const [isHovered, setIsHovered] = React.useState(false);
+
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
+    <motion.div 
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
+      <div 
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full transition-transform duration-300'
+        style={{
+          transform: isHovered ? 'perspective(1000px) rotateX(10deg) rotateY(-10deg)' : 'perspective(1000px) rotateX(0deg) rotateY(0deg)'
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -63,7 +68,7 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
+      </div>
     </motion.div>
   );
 };

@@ -5,7 +5,20 @@ import * as random from "maath/random/dist/maath-random.esm";
 
 const Stars = (props) => {
   const ref = useRef();
-  const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
+  const [sphere] = useState(() => {
+    // Generate star positions manually to avoid NaN values - reduced for mobile
+    const positions = new Float32Array(2000 * 3);
+    for (let i = 0; i < 2000 * 3; i += 3) {
+      const theta = Math.random() * 2 * Math.PI;
+      const phi = Math.acos(2 * Math.random() - 1);
+      const radius = 1.2;
+      
+      positions[i] = radius * Math.sin(phi) * Math.cos(theta);
+      positions[i + 1] = radius * Math.sin(phi) * Math.sin(theta);
+      positions[i + 2] = radius * Math.cos(phi);
+    }
+    return positions;
+  });
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;

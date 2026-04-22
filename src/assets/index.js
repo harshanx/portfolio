@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import harshanLogo from "./harshan-logo.svg";
-import harshan from "./harshan.png.jpeg";
+import harshan from "./harshan.jpeg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";

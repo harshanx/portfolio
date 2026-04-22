@@ -11,6 +11,15 @@ import {
   starbucks,
   tesla,
   shopify,
+  nodejs,
+  reactjs,
+  redux,
+  tailwind,
+  typescript,
+  mongodb,
+  docker,
+  figma,
+  threejs,
 
   mulearn,
   iste,
@@ -55,34 +64,6 @@ const services = [
 
 const technologies = [
   {
-    name: "Flutter",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
-  },
-  {
-    name: "Dart",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
-  },
-  {
-    name: "Firebase",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-  },
-  {
-    name: "Python",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-  },
-  {
-    name: "Java",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-  },
-  {
-    name: "C",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
-  },
-  {
-    name: "MySQL",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -95,16 +76,44 @@ const technologies = [
     icon: css,
   },
   {
-    name: "Bootstrap",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+    name: "React JS",
+    icon: reactjs,
   },
   {
-    name: "Unity",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg",
+    name: "Redux Toolkit",
+    icon: redux,
   },
   {
-    name: "Git",
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
+  {
+    name: "git",
     icon: git,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "docker",
+    icon: docker,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
   },
 ];
 
