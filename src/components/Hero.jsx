@@ -19,11 +19,17 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Harshan</span>
           </h1>
           <p className={`${styles.heroSubText} mt-1 sm:mt-2 text-white-100 leading-snug`}>
-            BTech CSE Student <br className='xs:block hidden' />
-            & Flutter Developer <br className='xs:block hidden' />
-            exploring <br className='xs:block hidden' />
-            Cybersecurity & AI
+            Computer Science undergraduate <br className='xs:block hidden' />
+            building full-stack and mobile apps <br className='xs:block hidden' />
+            with Python, FastAPI, Flutter & Firebase
           </p>
+          <a
+            href='/portfolio/Harshan-PV-Resume.pdf'
+            download='Harshan-PV-Resume.pdf'
+            className='inline-flex mt-6 px-5 py-3 rounded-xl border border-[#915EFF] text-white font-semibold hover:bg-[#915EFF] transition-colors'
+          >
+            Download my resume
+          </a>
         </div>
       </div>
 

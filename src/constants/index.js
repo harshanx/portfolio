@@ -45,19 +45,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Flutter Developer",
+    title: "Software Engineer",
     icon: mobile,
   },
   {
-    title: "Cybersecurity Learner",
+    title: "Backend & API Developer",
     icon: backend,
   },
   {
-    title: "Backend Developer",
+    title: "Flutter Developer",
     icon: web,
   },
   {
-    title: "ML / NLP Explorer",
+    title: "Software Tester",
     icon: creator,
   },
 ];
@@ -119,6 +119,18 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Software Testing & Accessibility Intern",
+    company_name: "Zendalona (Non-Profit Organization)",
+    icon: web,
+    iconBg: "#E6DEDD",
+    date: "Jun 2026 - Jul 2026",
+    points: [
+      "Performed functional, integration, and UI testing on the Accessible Bluff application.",
+      "Documented reproducible bugs and worked with developers during issue analysis and resolution.",
+      "Reviewed user flows for accessibility, usability, and interface consistency.",
+    ],
+  },
+  {
     title: "Sub Execom of CSE Dept",
     company_name: "ISTE GEC Palakkad",
     icon: iste,
@@ -136,7 +148,7 @@ const experiences = [
     company_name: "μLearn GECSKP",
     icon: mulearn,
     iconBg: "#383E56",
-    date: "Apr 2026 - Present",
+    date: "2026 - Present",
     points: [
       "Working as a Tech Team Member at μLearn GECSKP campus chapter.",
       "Organizing and coordinating tech events, workshops, and learning sessions.",
@@ -152,6 +164,17 @@ const experiences = [
 
 
 const projects = [
+  {
+    name: "ResumeForge",
+    description:
+      "A full-stack resume platform for creating, customizing, and exporting resumes as PDFs. Includes authentication, Supabase PostgreSQL storage, FastAPI REST endpoints, ATS-oriented analysis, job-description matching, and resume version management.",
+    tags: [
+      { name: "fastapi", color: "blue-text-gradient" },
+      { name: "supabase", color: "green-text-gradient" },
+      { name: "javascript", color: "pink-text-gradient" },
+    ],
+    image: web,
+  },
   {
     name: "CollBus",
     description:
@@ -201,18 +224,9 @@ const featuredProject = {
   description:
     "A Flutter mobile app providing automated message replies and missed call handling with Firebase authentication and Razorpay payments.",
   tags: [
-    {
-      name: "flutter",
-      color: "blue-text-gradient",
-    },
-    {
-      name: "firebase",
-      color: "green-text-gradient",
-    },
-    {
-      name: "razorpay",
-      color: "pink-text-gradient",
-    },
+    { name: "flutter", color: "blue-text-gradient" },
+    { name: "firebase", color: "green-text-gradient" },
+    { name: "razorpay", color: "pink-text-gradient" },
   ],
   image: autopilot,
   source_code_link: "https://github.com/harshanx/autopilot",

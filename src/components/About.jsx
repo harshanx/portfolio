@@ -76,15 +76,11 @@ const About = () => {
 
       >
 
-        I'm a BTech Computer Science Engineering student passionate about Flutter development
-
-        and exploring cybersecurity. I'm a quick learner with experience in mobile app development,
-
-        Firebase, and modern web technologies. I love building innovative solutions and
-
-        collaborating on projects that solve real-world problems. Let's work together to create
-
-        something amazing!
+        I'm a Computer Science undergraduate at Government Engineering College, Palakkad,
+        graduating in 2027. I build database-backed web and mobile applications, with hands-on
+        experience in Python, FastAPI, REST APIs, Supabase, Firebase, and Flutter. During my
+        accessibility-focused internship, I tested real user flows, documented defects, and
+        worked with developers to improve product quality.
 
       </motion.p>
 
